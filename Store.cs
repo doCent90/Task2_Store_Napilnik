@@ -4,15 +4,18 @@ using System.Linq;
 
 namespace Market
 {
-    static class Main
+    class Programm
     {
-        Warehause warehause = new Warehause(20);
-        Shop shop = new Shop(warehause);
+        public static void Main()
+        {
+            Warehause warehause = new Warehause(20);
+            Shop shop = new Shop(warehause);
 
-        shop.FillCart("iPhone12", 4);
-        shop.FillCart("iPhone11", 3);
+            shop.FillCart("iPhone12", 4);
+            shop.FillCart("iPhone11", 3);
 
-        shop.ShowCart();
+            shop.ShowCart();
+        }
     }
 
     class Good
